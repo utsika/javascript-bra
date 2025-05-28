@@ -5,10 +5,10 @@ import { Link, NavLink } from "react-router-dom";
 // Bilder importeras
 import Group18 from '../assets/Group18.png'; 
 
-class Header extends React.Component {
+class Headerhem extends React.Component {
 	render() {
 		return (
-			<div className="menyheader">
+			<div className="header">
 				<nav>
 					<div className="headermeny">
 						<div className="logga">
@@ -30,4 +30,4 @@ class Header extends React.Component {
 		)
 	}
 }
-export default Header;
+export default Headerhem;
