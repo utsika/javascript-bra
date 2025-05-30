@@ -16,6 +16,10 @@ h1 {
 	text-align: center;
 }
 
+h4 {
+	text-align: center;
+}
+
 nav {
 	height: 0;
 }
@@ -195,6 +199,8 @@ img {
 	margin: 0 auto;
 	padding-bottom: 10vh;
 }
+
+
 
 .meny-grid {
 	position: relative;

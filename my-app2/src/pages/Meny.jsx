@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from '../components/Header.jsx';
+import { getRandomSushiDeal } from '../randomizer.js';
 
-class Meny extends React.Component {
-	render() {
-		return (
-			<div className="Meny">
-				<Header />
+const Meny = () => {
+
+	// Använder useState för att hålla koll på dagens sushideal
+	const [deal, setDeal] = useState("");
+
+	useEffect(() => {
+		// Hämtar en slumpmässig sushideal när komponenten laddas
+		const randomDeal = getRandomSushiDeal();
+		// Uppdaterar med den slumpmässiga sushirätten
+		setDeal(randomDeal);
+	}, []);
+
+	return (
+
+		<div className="Meny">
+			<Header />
 			<div className="container">
 				<div className="linje3"></div>
 				<div className="linje4"></div>
 				<h3>Meny</h3>
+
+				{/* Lägger in dagens sushi deal */}
+				<h4>Dagens sushi deal: </h4>
+				<h4>{deal}</h4>
 
 				{/* Gömmer menyn, kommer fram då man klickar på rubriken. */}
 				<details open>
@@ -454,9 +470,9 @@ class Meny extends React.Component {
 
 			</div>
 
-			</div>
-		)
-	}
+		</div>
+	)
+	// 	}
 }
 
 export default Meny;

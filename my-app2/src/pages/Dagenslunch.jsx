@@ -2,7 +2,7 @@ import React from "react";
 import Header from '../components/Header.jsx';
 
 // Importerar knappen!
-import { showMessage } from '../components/javascriptbutton.js';
+// import { showMessage } from '../components/javascriptbutton.js';
 
 
 
@@ -13,10 +13,10 @@ class Dagenslunch extends React.Component {
 				<Header />
 				<div className="container">
 
-					// Pop-up knappen
-					<button onClick={showMessage}>
+					{/* // Pop-up knappen */}
+					{/* <button onClick={showMessage}>
 						Show Message
-					</button>
+					</button> */}
 
 					<div className="linje5"></div>
 					<div className="linje6"></div>
