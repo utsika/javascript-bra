@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from '../components/Header.jsx';
 import { getRandomSushiDeal } from '../randomizer.js';
+import HamburgerMeny from '../components/HamburgerMeny.jsx';
 
 const Meny = () => {
 
@@ -17,7 +18,15 @@ const Meny = () => {
 	return (
 
 		<div className="Meny">
-			<Header />
+
+			<div className="bigscreen">
+				<Header />
+			</div>
+			{/* Vid liten skärm visas hamburgarmenyn */}
+			<div className="smallscreen">
+				<HamburgerMeny />
+			</div>
+
 			<div className="container">
 				<div className="linje3"></div>
 				<div className="linje4"></div>

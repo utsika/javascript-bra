@@ -1,5 +1,6 @@
 import React from "react";
 import Header from '../components/Header.jsx';
+import HamburgerMeny from '../components/HamburgerMeny.jsx';
 
 // Importerar knappen!
 // import { showMessage } from '../components/javascriptbutton.js';
@@ -10,7 +11,13 @@ class Dagenslunch extends React.Component {
 	render() {
 		return (
 			<div className="Dagenslunch">
-				<Header />
+				<div className="bigscreen">
+					<Header />
+				</div>
+				{/* Vid liten skärm visas hamburgarmenyn */}
+				<div className="smallscreen">
+					<HamburgerMeny />
+				</div>
 				<div className="container">
 
 					{/* // Pop-up knappen */}
