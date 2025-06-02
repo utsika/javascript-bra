@@ -10,6 +10,7 @@ class Omoss extends React.Component {
 	render() {
 		return (
 			<div className="Omoss">
+				{/* Vid stor skärm visas den vanliga headern */}
 				<div className="bigscreen">
 					<Header />
 				</div>

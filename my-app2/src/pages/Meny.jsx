@@ -18,7 +18,7 @@ const Meny = () => {
 	return (
 
 		<div className="Meny">
-
+			{/* Vid stor skärm visas den vanliga headern */}
 			<div className="bigscreen">
 				<Header />
 			</div>

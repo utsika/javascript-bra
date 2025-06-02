@@ -15,6 +15,7 @@ function Galleri2() {
 	const [selectedMedia, setSelectedMedia] = useState(null);
 	return (
 		<div className="Galleri2">
+			{/* Vid stor skärm visas den vanliga headern */}
 			<div className="bigscreen">
 				<Header />
 			</div>
